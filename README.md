@@ -33,40 +33,51 @@ http://localhost:8080/paises
 
 5. CURL
 
-# Curl Linux or Curl Win.10
+Curl Linux or Curl Win.10
 
 
-# OUTPUT, Generate a File : "out.json"
-# curl -o out.json http://localhost:8080/paises
+OUTPUT, Generate a File : "out.json"
 
-# GET Method
-# curl -v http://localhost:8080/paises
+curl -o out.json http://localhost:8080/paises
 
-.
-# POST method
-# curl -X POST http://localhost:8080/paises -d "{\"code\": \"51\",  \"nombre\" : \"PE\",  \"iso\" : \"51\" }" 
-# curl -d @request.json -H "Content-Type: application/json" http://localhost:8080/paises
+GET Method
 
-.
-# PUT Method
-# curl -d @request.json -H 'Content-Type: application/json' -X PUT http://localhost:8080/paises?code=51&nombre=PE&iso=51
+curl -v http://localhost:8080/paises
 
 
-# DELETE Method
-# curl -X DELETE http://localhost:8080/paises?code=33
+POST method
+
+curl -X POST http://localhost:8080/paises -d "{\"code\": \"51\",  \"nombre\" : \"PE\",  \"iso\" : \"51\" }" 
+
+curl -d @request.json -H "Content-Type: application/json" http://localhost:8080/paises
+
+
+PUT Method
+
+curl -d @request.json -H 'Content-Type: application/json' -X PUT http://localhost:8080/paises?code=51&nombre=PE&iso=51
+
+
+DELETE Method
+
+curl -X DELETE http://localhost:8080/paises?code=33
 
 
 6. postman
-# https://www.postman.com/
 
-# POST method
-# http://localhost:8080/paises?code=51&nombre=PE&iso=51
+https://www.postman.com/
 
-# GET Method
-# http://localhost:8080/paises
+POST method
 
-# PUT Method
-# http://localhost:8080/paises?code=51&nombre=PERULAND&iso=51
+http://localhost:8080/paises?code=51&nombre=PE&iso=51
 
-# DELETE Method
-# http://localhost:8080/paises?code=51
+GET Method
+
+http://localhost:8080/paises
+
+PUT Method
+
+http://localhost:8080/paises?code=51&nombre=PERULAND&iso=51
+
+DELETE Method
+
+http://localhost:8080/paises?code=51
